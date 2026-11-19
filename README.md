@@ -356,7 +356,7 @@ static void US_Publish(uint32_t now)
   s_sampleCount = 0U;
   s_sampleIndex = 0U;
 }
-``` c언어
+``` 
 
 -  거리측정 센서 와 TRIG와 ECHO 의 타이머를 맞춰서 본 결과와 PUTTY 로 본 결과 창이다. 두번째는 ECHO 만 있는것. 
 ![결과창](./11.19/11.png) <br>

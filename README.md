@@ -366,3 +366,4 @@ static void US_Publish(uint32_t now)
 - 온습도 PUTTY 거랑 그래프 본것. 
 ![결과창](./11.19/온습도1번.png) <br>
 ![결과창](./11.19/온습도2.png) <br>
+![결과창](./11.19/온습도 확인.png) <br>

@@ -357,3 +357,11 @@ static void US_Publish(uint32_t now)
   s_sampleIndex = 0U;
 }
 ``` c언어
+-  거리측정 센서 와 TRIG와 ECHO 의 타이머를 맞춰서 본 결과와 PUTTY 로 본 결과 창이다. 두번째는 ECHO 만 있는것. 
+![결과창](./11.19/11.png) <br>
+![결과창](./11.19/22.png) <br>
+![결과창](./11.19/TRIGEGID.png) <br>
+
+- 온습도 PUTTY 거랑 그래프 본것. 
+![결과창](./11.19/온습도1번.png) <br>
+![결과창](./11.19/온습도2.png) <br>

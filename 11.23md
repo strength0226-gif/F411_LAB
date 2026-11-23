@@ -1,2 +1,62 @@
 # 오늘 Quartus와 모델심
-- 
+
+- ex 하나 and 기준.
+
+``` c언어
+// CH2_AND2.V
+
+module CH2_AND2(
+  A, B,
+  X
+);
+
+input A, B;
+output X;
+
+assign X = A & B;
+
+endmodule
+```
+
+``` c언어
+// CH2_AND2_TB.V
+
+`timescale 10ns / 1ps
+
+module TestBench;
+
+// input
+reg A, B;
+
+//output
+wire X;
+
+// Instantiate the U1
+CH2_AND2 U1(
+  A,B,
+  X
+);
+
+// Specify input stimulus
+initial begin
+    A <= 0; B <= 0;
+#10 A <= 1; B <= 0;
+#10 A <= 0; B <= 1;
+#10 A <= 1; B <= 1;
+end
+
+endmodule
+
+```
+- 이걸 만들고 tb로 시뮬레이터를 모델심으로 돌림.
+보드로 컴파일하고 보드에서도 led0와 버튼 1와 버튼 2로 확인.
+또한 RTL VIEWER 을 누르면 심볼 나옴,
+
+- 심볼은 코드를 만들고 컴파일하고 오른쪽 으로 마우스 누르면 Create symbol files for current file이 나옴
+
+- pin planner은 a와 b와 x 순서대로  pin_v4, pin v3, pin_ae11이다.
+
+- pro grammer 잘 연결되어있는지 보기.
+
+사진들은 보드에  잘 되었는지와  verilog 시물 결과이다.  block diagram 심볼들이다.
+

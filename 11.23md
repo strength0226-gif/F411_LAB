@@ -112,6 +112,8 @@ initial begin
 #10 A <= 0; B <= 1;
 #10 A <= 1; B <= 1;
 end
+![결과창](./11.19/시뮬
+.png) <br>
 
 endmodule
 
